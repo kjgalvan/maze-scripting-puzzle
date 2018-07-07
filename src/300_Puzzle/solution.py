@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import sys
-import file4
+import file15
 
 def getNeighbors(row, col):
     neighbors = []
@@ -20,7 +20,7 @@ def direction(firstRow, firstCol, secondRow, secondCol):
     if firstCol + 1 == secondCol:
         return "D"
 
-board = file4.getBoard()
+board = file15.getBoard()
 
 path = " "
 start = "o"

@@ -1,11 +1,11 @@
 #!/bin/usr/python
 
-board = [["X","X","X","X","X","X","X"],
-         ["X","X","X","X","X","X","X"],
-         ["X","X","X","X","X","X","X"],
-         ["X","X","X","X","X","X","X"],
-         ["X","X","X","X","X","X","X"],
-         ["X","X","X","X","X","X","X"]]
+board = [["X","-","X","X","X","X","X"],
+         ["X"," ","X","X","X","X","X"],
+         ["X"," "," ","X","X","X","X"],
+         ["X","X"," "," ","X","X","X"],
+         ["X","X","X"," ","X","X","X"],
+         ["X","X","X"," "," ","o","X"]]
 
 def getBoard():
     return board
@@ -14,4 +14,4 @@ def printBoard():
     print '\n'.join(' '.join(map(str, x)) for x in board)
 
 def getAnswer():
-    return "SAAWWDWWDDDD"
+    return "AAWWAWAWW"

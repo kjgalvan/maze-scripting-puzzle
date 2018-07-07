@@ -4,7 +4,7 @@ import sys
 import random
 import importlib
 
-fileIndex = random.randint(1,3)
+fileIndex = random.randint(1,15)
 filePath = "file" + `fileIndex`
 file = importlib.import_module(filePath)
 
@@ -21,7 +21,7 @@ def input():
         print 'You have 1 second to solve.'
         print 'Move using WASD, get from o to -'
         file.printBoard()
-        print 'Type answer: '
+        print 'Type answer, upper-case, (ex: WWAADS): '
         foo = raw_input()
         return foo
     except:
