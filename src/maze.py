@@ -5,7 +5,7 @@ import sys
 TIMEOUT = 2
 
 def board():
-    board = [["X","X","X","X"," ","X","X"],
+    board = [["X","X","X","X","-","X","X"],
              ["X","X","X","X"," ","X","X"],
              ["X","X","X","X"," ","X","X"],
              ["X"," "," "," "," ","X","X"],
