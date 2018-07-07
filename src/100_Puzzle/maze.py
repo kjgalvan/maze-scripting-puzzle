@@ -36,6 +36,6 @@ s = input()
 signal.alarm(0)
 if s != None:
     if s == "DWWDDDWWW":
-        print 'Correct!'
+        print 'Correct! flag{ctrlshiftc-ctrlshiftv}'
     else:
         print 'Wrong!'
