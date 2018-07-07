@@ -1,8 +1,4 @@
 #!/usr/bin/python
-import signal
-import sys
-
-TIMEOUT = 2
 
 def board():
     board = [["X","X","X","X","-","X","X"],
@@ -12,12 +8,6 @@ def board():
              ["X"," ","X","X","X","X","X"],
              ["o"," ","X","X","X","X","X"]]
     print '\n'.join(' '.join(map(str, x)) for x in board)
-
-def interrupted(signum, frame):
-    "called when read times out"
-    print 'Try again!'
-    sys.exit()
-signal.signal(signal.SIGALRM, interrupted)
 
 def input():
     try:
@@ -30,10 +20,8 @@ def input():
     except:
         return
 
-signal.alarm(TIMEOUT)
 s = input()
 
-signal.alarm(0)
 if s != None:
     if s == "DWWDDDWWW":
         print 'Correct! flag{ctrlshiftc-ctrlshiftv}'
